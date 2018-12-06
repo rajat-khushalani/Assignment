@@ -36,6 +36,7 @@ import java.util.*;
             while (menuStore != 6) {
                 System.out.println();
                 switch (menuStore) {
+                    //Add data
                     case 1:
                         Scanner input = new Scanner(System.in);
 
@@ -90,13 +91,14 @@ import java.util.*;
                         break;
 
                     case 2:
-
+                        //Print all employees
                         for(int i=0;i<employeesByKey.size();i++){
                             Employee e = (Employee)employeesByKey.get(i);
                             System.out.println(e.toString());
                         }
 
                     case 3:
+                        //Print all employees who are developers
                         for(int i=0;i<employeesByKey.size();i++){
                             Employee e = (Employee)employeesByKey.get(i);
                             if(e.getdesignation().equalsIgnoreCase("developer")){
@@ -113,6 +115,7 @@ import java.util.*;
 
 
                     case 4:
+                        //print all employees who have single organization
                         for(int i=0;i<employeesByKey.size();i++) {
                             Employee e = (Employee) employeesByKey.get(i);
                             if (e.getEmpHistory().equals(null)) {
@@ -122,6 +125,7 @@ import java.util.*;
                             break;
 
                     case 5:
+                        //Print all employees who are developers and have morethan two years of experience
                         for(int i=0;i<employeesByKey.size();i++){
                             Employee e = (Employee)employeesByKey.get(i);
                             for(int j=0;j<e.getEmpHistory().size();j++){

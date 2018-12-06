@@ -18,6 +18,33 @@ public class Employee {
     public ArrayList<EmploymentHistory> empHistory;
     public ArrayList<EducationalDetails> eduDetails;
 
+    public Employee(String Name, int Age, String Designation, ArrayList<EmploymentHistory> empHistory, ArrayList<EducationalDetails> eduDetails) {
+        this.Name = Name;
+        this.Age = Age;
+        this.Designation = Designation;
+        this.empHistory=empHistory;
+        this.eduDetails=eduDetails;
+        setEmp_id(++count);
+    }
+    public String getName() {
+        return Name;
+    }
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+    public long getAge() {
+        return Age;
+    }
+    public void  setAge(int Age) {
+        this.Age = Age;
+    }
+    public String getdesignation() {
+        return Designation;
+    }
+    public void  setdesignation(String Designation) {
+        this.Designation = Designation;
+    }
+
     public ArrayList<EmploymentHistory> getEmpHistory() {
         return empHistory;
     }
@@ -64,33 +91,8 @@ public class Employee {
                 '}';
     }
 
-    public Employee(String Name, int Age, String Designation, ArrayList<EmploymentHistory> empHistory, ArrayList<EducationalDetails> eduDetails) {
-        this.Name = Name;
-        this.Age = Age;
-        this.Designation = Designation;
-        this.empHistory=empHistory;
-        this.eduDetails=eduDetails;
-        setEmp_id(++count);
-    }
 
-    public String getName() {
-        return Name;
-    }
-    public void setName(String Name) {
-        this.Name = Name;
-    }
-    public long getAge() {
-        return Age;
-    }
-    public void  setAge(int Age) {
-        this.Age = Age;
-    }
-    public String getdesignation() {
-        return Designation;
-    }
-    public void  setdesignation(String Designation) {
-        this.Designation = Designation;
-    }
+
 
 }
 

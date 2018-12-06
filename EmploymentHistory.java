@@ -17,6 +17,25 @@ public class EmploymentHistory {
     public String getOrganization() {
         return Organization;
     }
+    public float getWorkDuration() {
+        return workDuration;
+    }
+
+    public void setWorkDuration(float workDuration) {
+        this.workDuration = workDuration;
+    }
+
+    public String getProjectWorked() {
+        return projectWorked;
+    }
+
+    public void setProjectWorked(String projectWorked) {
+        this.projectWorked = projectWorked;
+    }
+
+    public void setOrganization(String organization) {
+        Organization = organization;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -42,23 +61,5 @@ public class EmploymentHistory {
         return Objects.hash(Organization, workDuration, projectWorked);
     }
 
-    public float getWorkDuration() {
-        return workDuration;
-    }
 
-    public void setWorkDuration(float workDuration) {
-        this.workDuration = workDuration;
-    }
-
-    public String getProjectWorked() {
-        return projectWorked;
-    }
-
-    public void setProjectWorked(String projectWorked) {
-        this.projectWorked = projectWorked;
-    }
-
-    public void setOrganization(String organization) {
-        Organization = organization;
-    }
 }
