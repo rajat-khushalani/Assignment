@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/Years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/IR_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="249dp"
+        android:text="Year(s)"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/year_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Years"
+        android:layout_alignLeft="@+id/Years"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:id="@+id/btn_SimpleInterest"
+        android:layout_width="174dp"
+        android:layout_height="59dp"
+        android:layout_alignLeft="@+id/year_bar"
+        android:layout_alignRight="@+id/year_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="188dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="131dp"
+        android:text="Simple Interest" />
+
+    <Button
+        android:id="@+id/btn_CompoundInterest"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_alignLeft="@+id/year_bar"
+        android:layout_alignRight="@+id/year_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginRight="192dp"
+        android:layout_marginBottom="129dp"
+        android:text="Compound Interest" />
+
+    <EditText
+        android:id="@+id/IR_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Years"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/Interest_Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/IR_bar"
+        android:layout_alignLeft="@+id/IR_bar"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginBottom="40dp"
+        android:text="Interest Rate"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/PA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PA_bar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="Principal Amount"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/PA_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Interest_Rate"
+        android:layout_below="@+id/PA"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="67dp"
+        android:layout_toEndOf="@+id/PA"
+        android:layout_toRightOf="@+id/PA"
+        android:background="@color/colorAccent"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="153dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="450dp" />
+
+</RelativeLayout>
