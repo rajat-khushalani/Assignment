@@ -7,7 +7,7 @@ float year;
         this.principle=principle;
         this.rate=rate;
         this.year=year;
-        float si = (principle * principle * year) / 100;
+        float si = (principle * rate * year) / 100;
         return si;
     }
 
