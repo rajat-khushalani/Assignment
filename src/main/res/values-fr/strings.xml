@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculatrice Intérêt</string>
+    <string name="simple_interest">Intérêt Simple</string>
+    <string name="compound_interest">Intérêts Composést</string>
+    <string name="principle_amount">le Montant Principal</string>
+    <string name="interest_rate">Taux Intérêt</string>
+    <string name="years">années</string>
+    <string name="calculated_interest">Intérêts Calculés</string>
+</resources>

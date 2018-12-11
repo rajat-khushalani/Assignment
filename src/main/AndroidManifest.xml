@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="basic_ui_views.gl.com.basic_ui_views">
+    package="interest_calculator.gl.com.interest_calculator">
 
     <application
         android:allowBackup="true"

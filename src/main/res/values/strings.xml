@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Basic_UI_Views</string>
+    <string name="app_name">Interest_Calculator</string>
+    <string name="simple_interest">Simple Interest</string>
+    <string name="compound_interest">Compound Interest</string>
+    <string name="principle_amount">Principle Amount</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="years">years</string>
+    <string name="calculated_interest">Calculated Interest</string>
 </resources>
